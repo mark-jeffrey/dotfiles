@@ -19,11 +19,15 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     # wslu
     export BROWSER=wslview
 
+    # WSL specific Aliases
+    alias w~="cd /mnt/c/Users/mark"
+
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # source from .zsh
     source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
     source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-    
+    source ~/.zsh/pass-zsh-completion/pass-zsh-completion.plugin.zsh    
+
     # setup pyenv
     export PYENV_ROOT="$HOME/.pyenv"
     command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
@@ -38,11 +42,6 @@ fi
 
 # set variables
 export LANG="en_GB.UTF-8"
-
-# zsh plugins
-source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
-source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.zsh/pass-zsh-completion/pass-zsh-completion.plugin.zsh
 
 # Aliases
 alias r="radian"
