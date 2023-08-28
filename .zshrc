@@ -20,7 +20,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     export BROWSER=wslview
 
     # WSL specific Aliases
-    alias w~="cd /mnt/c/Users/mark"
+    alias -g w~="/mnt/c/Users/mark"
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # source from .zsh
@@ -49,6 +49,8 @@ alias c="clear"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
 alias vim="nvim"
+alias -g hpc="hpcjeff1@login-cpu.hpc.cam.ac.uk"
+alias -g hpc-work="hpcjeff1@login-cpu.hpc.cam.ac.uk:/home/hpcjeff1/rds/hpc-work"
 
 # Starship prompt
 eval "$(starship init zsh)"
