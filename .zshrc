@@ -47,6 +47,7 @@ alias r="radian"
 alias c="clear"
 alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias pass='PASSWORD_STORE_ENABLE_EXTENSIONS=true pass'
+alias vim="nvim"
 
 # Starship prompt
 eval "$(starship init zsh)"
