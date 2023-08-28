@@ -29,10 +29,10 @@ if [[ "$OSTYPE" =~ "darwin" ]]; then
   
 # WSL env
 elif [[ "$OSTYPE" == "linux-gnu" ]]; then
+
   # Add /usr/lib and /usr/local/lib to PATH
   export LD_LIBRARY_PATH="/lib:/usr/lib:/usr/local/lib:/usr/.local/bin"
-
-  # Add starship to PATH
+  export PATH="/home/mark/.local/bin:$PATH"
   export PATH="$PATH:/mnt/c/Program\ Files"
   
   # Set up Homebrew environment
