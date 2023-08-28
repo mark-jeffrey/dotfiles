@@ -21,6 +21,7 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
 
     # WSL specific Aliases
     alias w~="cd /mnt/c/Users/mark"
+    alias et="et.exe -l1 -i"
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # source from .zsh
