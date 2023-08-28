@@ -11,8 +11,6 @@ command_timeout = 2000
 # Prompt
 format = """
 $all\
-$fill\
-$time\
 $line_break\
 $character
 """
@@ -21,7 +19,7 @@ $character
 symbol = " "
 
 [time]
-disabled = false
+disabled = true
 style = "bold bright-black"
 format = "[$time]($style)"
 
