@@ -9,11 +9,7 @@ scan_timeout = 30
 command_timeout = 2000
 
 # Prompt
-format = """
-$all\
-$line_break\
-$character
-"""
+format = '$all$character'
 
 [fill]
 symbol = " "
