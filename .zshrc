@@ -20,12 +20,8 @@ if [[ "$OSTYPE" == "linux-gnu" ]]; then
     export BROWSER=wslview
 
     # WSL specific Aliases
-<<<<<<< HEAD
-    alias w~="cd /mnt/c/Users/mark"
     alias et="et.exe -l1 -i"
-=======
     alias -g w~="/mnt/c/Users/mark"
->>>>>>> 12efad983d1112cff28547f4912d32ae1c6e7fcd
 
 elif [[ "$OSTYPE" =~ "darwin" ]]; then
     # source from .zsh
