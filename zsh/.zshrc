@@ -67,9 +67,15 @@ alias ls='lsd'
 alias vim='nvim'
 alias c='clear'
 
+# Personal Aliases
+alias odbk='rclone sync "onedrive-personal": /mnt/hdd/onedrive-backup'
+
 # Shell integrations
-eval "$(fzf --zsh)"
+#eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# Created by `pipx` on 2024-06-15 10:49:25
+export PATH="$PATH:/home/mark/.local/bin"
