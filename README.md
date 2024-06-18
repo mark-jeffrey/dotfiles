@@ -1,40 +1,24 @@
 # Dotfiles Repository 
 
-Archlinux dotfiles for use with [GNU Stow](www.gnu.org/software/stow).
-Installation and configuration inspired by 
-[typecraft](https://github.com/typecraft-dev/dotfiles) and 
-[dreamsofautonomy](https://github.com/dreamsofautonomy/zensh).
+Dotfiles for use with GNU stow
 
 ## Dependencies
 
-### General 
+### External repos/downloads
 
-- git 
-- yay
-- tmux (and tpm)
-- alacritty
-
-### Zsh 
-
-- zsh 
-- zinit
-- fzf
-- lsd 
-- zoxide
-
-### Neovim 
-
+- nordvpn (for SSH via meshnet)
+- bitwarden
+- tpm
+- fd 
+- MesloLGS nerd font
 - LazyVim
-- ripgrep
-- fd
-- lazygit
 
-### GUI
+```{shell}
+sudo apt install stow zsh fzf lsd zoxoide openssh alacrity neovim ripgrep
+chsh -s /use/bin/zsh user
+git clone https://GitHub.com/mark-jeffrey/dotfiles ~/dotfiles
+cd ~/dotfiles
+stow *
+```
 
-- i3
-- picom 
-- polybar
-- rofi
-- feh
-- gnome for troubleshooting and GDM
 
