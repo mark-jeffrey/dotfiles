@@ -13,6 +13,8 @@ Dotfiles for use with GNU stow
 - MesloLGS nerd font
 - LazyVim
 
+### Initial setup
+
 ```{shell}
 sudo apt install stow zsh fzf lsd zoxoide openssh alacrity neovim ripgrep
 chsh -s /usr/bin/zsh user
