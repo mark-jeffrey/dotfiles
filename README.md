@@ -15,7 +15,7 @@ Dotfiles for use with GNU stow
 
 ```{shell}
 sudo apt install stow zsh fzf lsd zoxoide openssh alacrity neovim ripgrep
-chsh -s /use/bin/zsh user
+chsh -s /usr/bin/zsh user
 git clone https://GitHub.com/mark-jeffrey/dotfiles ~/dotfiles
 cd ~/dotfiles
 stow *
