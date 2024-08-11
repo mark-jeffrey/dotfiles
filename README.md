@@ -17,6 +17,12 @@ stow *
 - [bitwarden](https://bitwarden.com/download/)
 - [tpm](https://github.com/tmux-plugins/tpm)
 - [MesloLGS nerd font](https://www.nerdfonts.com/font-downloads)
+
+```{shell}
+wget https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/Meslo.zip
+unzip Meslo.zip -d ~/.fonts
+fc-cache -fv
+```
 - [LazyVim](https://www.lazyvim.org/installation)
 
 ## Other new system tasks
