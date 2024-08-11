@@ -24,6 +24,7 @@ unzip Meslo.zip -d ~/.fonts
 fc-cache -fv
 ```
 - [LazyVim](https://www.lazyvim.org/installation)
+- [zinit](https://github.com/zdharma-continuum/zinit?tab=readme-ov-file#install)
 
 ## Other new system tasks
 
