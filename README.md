@@ -30,10 +30,11 @@ fc-cache -fv
 
 - [VsCode] +/- [RStudio] and set keybinds
 _ [miniconda], [R] and [Python] environments
-- [zotero]
-- [Firefox]
-_ [syncthing] and [rclone] for backups
+- [zotero](https://github.com/retorquere/zotero-deb)
+- [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
+- Install and configure [syncthing] and [rclone] for backups
 - [Wireguard]
-- [Remote desktop]
-_ [Wake on LAN]
+- Configure [Remote desktop]
+- Configure [Wake on LAN]
 - [Authenticator]
+- [topydo] Todo.txt manager
