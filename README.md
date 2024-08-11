@@ -5,7 +5,7 @@ Dotfiles for use with GNU stow
 ## Initial setup
 
 ```{shell}
-sudo apt install stow zsh fzf lsd zoxoide openssh alacrity neovim ripgrep fd-find wireguard wireguard-tools rclone
+sudo apt install stow zsh fzf lsd zoxide alacritty neovim ripgrep fd-find wireguard wireguard-tools rclone
 chsh -s /usr/bin/zsh <user>
 git clone https://GitHub.com/mark-jeffrey/dotfiles ~/dotfiles
 cd ~/dotfiles
