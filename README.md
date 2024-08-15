@@ -38,3 +38,18 @@ _ [miniconda], [R] and [Python] environments
 - Configure [Wake on LAN]
 - [Authenticator]
 - [topydo] Todo.txt manager
+
+## Mount OneDrive on startup
+
+```{shell}
+sudo apt install rclone
+rclone config
+mkdir ~/onedrive
+```
+
+Follow prompts to add onedrive remote and authenticate, detailed description [here](https://itsfoss.com/use-onedrive-linux-rclone/).
+Open Gnome Startup Applications and add and entry with the below command to mount on startup.
+
+```{shell}
+sh -c "rclone --vfs-cache-mode writes mount \"one drive\": ~/OneDrive"
+```
