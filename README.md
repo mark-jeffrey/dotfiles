@@ -24,15 +24,17 @@ unzip Meslo.zip -d ~/.fonts
 fc-cache -fv
 ```
 - [LazyVim](https://www.lazyvim.org/installation)
+- [zinit](https://github.com/zdharma-continuum/zinit?tab=readme-ov-file#install)
 
 ## Other new system tasks
 
 - [VsCode] +/- [RStudio] and set keybinds
 _ [miniconda], [R] and [Python] environments
-- [zotero]
-- [Firefox]
-_ [syncthing] and [rclone] for backups
+- [zotero](https://github.com/retorquere/zotero-deb)
+- [Firefox](https://www.mozilla.org/en-GB/firefox/new/)
+- Install and configure [syncthing] and [rclone] for backups
 - [Wireguard]
-- [Remote desktop]
-_ [Wake on LAN]
+- Configure [Remote desktop]
+- Configure [Wake on LAN]
 - [Authenticator]
+- [topydo] Todo.txt manager
