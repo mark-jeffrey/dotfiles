@@ -51,5 +51,5 @@ Follow prompts to add onedrive remote and authenticate, detailed description [he
 Open Gnome Startup Applications and add and entry with the below command to mount on startup.
 
 ```{shell}
-sh -c "rclone --vfs-cache-mode writes mount \"one drive\": ~/OneDrive"
+sh -c "rclone --vfs-cache-mode writes mount onedrive: ~/onedrive"
 ```
