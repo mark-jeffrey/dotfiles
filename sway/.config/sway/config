@@ -21,12 +21,13 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+#output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/mark/Pictures/Wallpapers/snowy_mountains.png fill
 output DP-2 pos 0 0 res 2560x1440@60Hz 
 output DP-1 pos 2560 -480 res 1920x1080@60Hz transform 90
 
-gaps inner 8
-gaps outer 8
+gaps inner 1
+gaps outer 1
 focus output DP-2
 
 # You can get the names of your inputs by running: swaymsg -t get_inputs
