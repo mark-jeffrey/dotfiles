@@ -70,7 +70,7 @@ alias c='clear'
 alias td='topydo'
 
 # Shell integrations
-eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)" &>/dev/null
 eval "$(zoxide init --cmd cd zsh)"
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
