@@ -90,3 +90,5 @@ zinit light-mode for \
     zdharma-continuum/zinit-annex-rust
 
 ### End of Zinit's installer chunk
+
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
