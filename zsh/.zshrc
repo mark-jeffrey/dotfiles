@@ -98,6 +98,7 @@ zinit light-mode for \
 
 ### End of Zinit's installer chunk
 
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/mark/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
