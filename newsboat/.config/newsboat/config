@@ -1,0 +1,2 @@
+browser qutebrowser
+macro v set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-browser ; set browser qutebrowser
