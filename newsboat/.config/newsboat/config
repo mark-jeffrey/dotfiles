@@ -1,2 +1,11 @@
+# Use NewsBlur as feed source
+urls-source "newsblur"
+newsblur-login "hobnobs"
+newsblur-passwordeval "gpg --decrypt ~/.config/newsboat/newsblur-password.gpg" 
+cookie-cache "~/.config/newsboat/cookies.txt"
+
+# Browser options
 browser qutebrowser
+
+# Open youtube links in mpv
 macro v set browser "setsid -f mpv --really-quiet --no-terminal" ; open-in-browser ; set browser qutebrowser
