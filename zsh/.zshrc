@@ -63,12 +63,13 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='lsd'
-alias vim='nvim'
-alias vi='nvim'
+alias b='buku'
 alias c='clear'
-alias td='topydo'
-alias wttr='curl wttr.in/Cambridge'
+alias ls='lsd'
+alias t='topydo -t /home/mark/journal/todo.txt'
+alias vi='nvim'
+alias vim='nvim'
+alias wtr='curl wttr.in/Cambridge'
 
 # Shell integrations
 eval "$(ssh-agent -s)" &>/dev/null
