@@ -65,11 +65,15 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias b='buku'
 alias c='clear'
-alias ls='lsd'
 alias t='topydo -t /home/mark/journal/todo.txt'
+
+alias ls='lsd'
 alias vi='nvim'
 alias vim='nvim'
 alias wtr='curl wttr.in/Cambridge'
+
+alias proton="sudo wg-quick up proton"
+alias opn="sudo wg-quick up opn"
 
 # Shell integrations
 eval "$(ssh-agent -s)" &>/dev/null
