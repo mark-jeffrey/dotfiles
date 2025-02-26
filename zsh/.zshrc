@@ -75,6 +75,8 @@ alias wtr='curl wttr.in/Cambridge'
 alias proton="sudo wg-quick up proton"
 alias opn="sudo wg-quick up opn"
 
+alias ceph="rclone --vfs-cache-mode writes mount ceph:ceph /home/mark/ceph"
+
 # Shell integrations
 eval "$(ssh-agent -s)" &>/dev/null
 eval "$(zoxide init --cmd cd zsh)"
