@@ -65,21 +65,23 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Aliases
 alias b='buku'
 alias c='clear'
-alias t='topydo -t /home/mark/journal/todo.txt'
-
+alias ceph="rclone --vfs-cache-mode writes mount ceph:ceph /home/mark/ceph --daemon"
 alias ls='lsd'
+alias notes="cd ~/notes && zk edit -i"
+alias opn="sudo wg-quick up opn"
+alias proton="sudo wg-quick up proton"
+alias t='topydo -t /home/mark/journal/todo.txt'
 alias vi='nvim'
 alias vim='nvim'
 alias wtr='curl wttr.in/Cambridge'
 
-alias proton="sudo wg-quick up proton"
-alias opn="sudo wg-quick up opn"
 
 # Shell integrations
 eval "$(ssh-agent -s)" &>/dev/null
 eval "$(zoxide init --cmd cd zsh)"
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

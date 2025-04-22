@@ -1,8 +1,11 @@
 directory: ~/Music
+
 library: ~/.data/musiclibrary.db
+
 plugins: fetchart lyrics lastgenre convert
+
 import:
-    incremental: yes
-    quiet: yes
+    # incremental: yes
+    # quiet: yes
     log: ~/.data/musiclibrarylog.txt
 
