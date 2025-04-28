@@ -25,51 +25,43 @@ vim.keymap.set(
 )
 vim.keymap.set("v", "<leader>zf", ":'<,'>ZkMatch<CR>", { desc = "Search for notes matching current visual selection" })
 
--- zk: only for Markdown files in a zk notebook.
-if vim.bo.filetype == "markdown" then
-  if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
-    vim.keymap.set(
-      "n",
-      "<CR>",
-      "<Cmd>lua vim.lsp.buf.definition()<CR>",
-      { buffer = true, desc = "Open link under the caret" }
-    )
-    vim.keymap.set(
-      "n",
-      "<leader>zn",
-      "<Cmd>ZkNew { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>",
-      { buffer = true, desc = "Create zk note in same directory as current buffer" }
-    )
-    vim.keymap.set(
-      "v",
-      "<leader>znt",
-      ":'<,'>ZkNewFromTitleSelection { dir = vim.fn.expand('%:p:h') }<CR>",
-      { buffer = true, desc = "Create note in same directory as current buffer using selection as title" }
-    )
-    vim.keymap.set(
-      "v",
-      "<leader>znc",
-      ":'<,'>ZkNewFromContentSelection { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>",
-      { buffer = true, desc = "Create note in same directory as current buffer, using selection as note content" }
-    )
-    vim.keymap.set(
-      "n",
-      "<leader>zb",
-      "<Cmd>ZkBacklinks<CR>",
-      { buffer = true, desc = "Open notes linking to current buffer" }
-    )
-    vim.keymap.set(
-      "n",
-      "<leader>zl",
-      "<Cmd>ZkLinks<CR>",
-      { buffer = true, desc = "Open notes linked by the current buffer" }
-    )
-    vim.keymap.set("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", { buffer = true, desc = "Preview a linked note" })
-    vim.keymap.set(
-      "v",
-      "<leader>za",
-      ":'<,'>lua vim.lsp.buf.range_code_action()<CR>",
-      { buffer = true, desc = "Open code actions for visual selection" }
-    )
-  end
+-- zk: if in a notebook
+if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
+  vim.keymap.set(
+    "n",
+    "<leader>zn",
+    "<Cmd>ZkNew { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>",
+    { buffer = true, desc = "Create zk note in same directory as current buffer" }
+  )
+  vim.keymap.set(
+    "v",
+    "<leader>zct",
+    ":'<,'>ZkNewFromTitleSelection { dir = vim.fn.expand('%:p:h') }<CR>",
+    { buffer = true, desc = "Create note using selection as title" }
+  )
+  vim.keymap.set(
+    "v",
+    "<leader>znc",
+    ":'<,'>ZkNewFromContentSelection { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>",
+    { buffer = true, desc = "Create note using selection as note content" }
+  )
+  vim.keymap.set(
+    "n",
+    "<leader>zb",
+    "<Cmd>ZkBacklinks<CR>",
+    { buffer = true, desc = "Open notes linking to current buffer" }
+  )
+  vim.keymap.set(
+    "n",
+    "<leader>zl",
+    "<Cmd>ZkLinks<CR>",
+    { buffer = true, desc = "Open notes linked by the current buffer" }
+  )
+  vim.keymap.set("n", "K", "<Cmd>lua vim.lsp.buf.hover()<CR>", { buffer = true, desc = "Preview a linked note" })
+  vim.keymap.set(
+    "v",
+    "<leader>za",
+    ":'<,'>lua vim.lsp.buf.range_code_action()<CR>",
+    { buffer = true, desc = "Open code actions for visual selection" }
+  )
 end
