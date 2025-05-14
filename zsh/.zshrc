@@ -67,6 +67,7 @@ alias b='buku'
 alias c='clear'
 alias ceph="rclone --vfs-cache-mode writes mount ceph:ceph /home/mark/ceph --daemon"
 alias ls='lsd'
+alias foundry='~/.local/share/foundryvtt/foundryvtt'
 alias movec="roller d6 d10 d10 | wl-copy"
 alias move="roller d6 2d10"
 alias notes="cd ~/notes && zk edit -i"
@@ -99,8 +100,10 @@ zinit light-mode for \
 ### End of Zinit's installer chunk
 
 
-# PATH
+# ENV
 export PATH="$PATH:/opt/nvim-linux64/bin"
+export ZK_NOTEBOOK_DIR='/home/mark/notes'
+
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
