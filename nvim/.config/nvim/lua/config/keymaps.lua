@@ -41,7 +41,7 @@ if require("zk.util").notebook_root(vim.fn.expand("%:p")) ~= nil then
   )
   vim.keymap.set(
     "v",
-    "<leader>znc",
+    "<leader>zcc",
     ":'<,'>ZkNewFromContentSelection { dir = vim.fn.expand('%:p:h'), title = vim.fn.input('Title: ') }<CR>",
     { buffer = true, desc = "Create note using selection as note content" }
   )
