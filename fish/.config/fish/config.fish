@@ -22,6 +22,9 @@ end
 
 alias r="radian"
 alias notes="cd /home/mark/notes && zk edit -i"
+alias cd="z"
+alias ls="eza"
+alias cat="bat"
 
 # PROMPT
 starship init fish | source
